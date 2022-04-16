@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+
+    <!-- Costumized CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google fonts (Overpass) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex">
+    <div class="container">
+      <div class="star flex circular-container">
+        <img src="assets/images/icon-star.svg" alt="Icon of a star" />
+      </div>
+      <div class="intructions">
+        <h1>How did we do ?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="rate flex">
+        <button class="rate-number circular-container">1</button>
+        <button class="rate-number circular-container">2</button>
+        <button class="rate-number circular-container">3</button>
+        <button class="rate-number circular-container">4</button>
+        <button class="rate-number circular-container">5</button>
+      </div>
+      <div class="submit">
+        <button>Submit</button>
+      </div>
+      <div class="invalid-submit">
+        <small>Please rate our service!</small>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/app.js"></script>
+</html>

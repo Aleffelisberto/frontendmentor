@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color pallete */
+
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(214, 19%, 15%);
+  --dark-blue-secondary: hsl(213, 20%, 21%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+.circular-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.centralize {
+  text-align: center;
+}
+
+.container {
+  background-color: var(--dark-blue);
+  padding: 20px 25px;
+  margin: 0 auto;
+  border-radius: 15px;
+  max-width: 375px;
+}
+
+.container h1,
+.container button {
+  color: var(--white);
+}
+
+.container p,
+.container .rate-number {
+  color: var(--medium-grey);
+}
+
+.rate button,
+.star {
+  background-color: var(--dark-blue-secondary);
+  display: inline-block;
+}
+
+.star {
+  margin: 0 0 20px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  margin: 25px 0;
+}
+
+.rate {
+  margin: 25px 0;
+  justify-content: space-between;
+}
+
+.rate button {
+  padding: 15px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.rate button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.rate button.active-rate-button {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit button {
+  background-color: var(--orange);
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.invalid-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.invalid-submit.show {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 10px;
+  color: red;
+}
+
+.container .image,
+.container .thanks-message {
+  margin: 20px 0;
+}
+
+.container .rate-message {
+  width: max-content;
+  margin: 20px auto;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: var(--dark-blue-secondary);
+  color: var(--orange);
+}
+
+.container .thanks-message h1 {
+  margin-bottom: 10px;
+}
